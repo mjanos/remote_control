@@ -1,1 +1,2 @@
-
+all: remote.c remote.h
+    gcc remote.c -oremote
