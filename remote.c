@@ -106,6 +106,11 @@ int main () {
       printf("back\n");
       break;
     case 4:
+      msg = "4";
+      len = strlen(msg);
+      if (send(sockfd, msg, len, 0) == -1) {
+        perror("send");
+      }
       printf("stop\n");
       break;
     }
